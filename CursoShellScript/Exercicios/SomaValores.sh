@@ -1,22 +1,13 @@
 #!/bin/bash
 
-#########################################################################
-# Exercício 1 - Criando e Executando Scripts				#
-#									#
-# Nome: SomaValores.sh							#
-#									#
-# Autor: Ricardo Prudenciato (ricardo@linuxsemfronteiras.com.br)	#
-# Data: DD/MM/AAAA							#
-#									#
-# Descrição: O script faz a soma de dois valores inseridos 		#
-#	     pelo usuário						#
-#									#
-# Uso: ./SomaValores.sh							#
-#									#
-#########################################################################
+######################################################################################
+#Autor: Hélio Argentoni								     #
+#Descrição: Usuário vai informar dois valores e será exibido na tela a soma dos dois.#
+#Nome do Script: SomaValores.sh							     #
+######################################################################################
 
-read -p "Informe o Valor 1: " VALOR1
-read -p "Informe o Valor 2: " VALOR2
-
-echo 
-echo "A soma de $VALOR1 + $VALOR2 é $(expr $VALOR1 + $VALOR2)"
+read -p "Informe o primeiro valor: " VALOR1
+echo ""
+read -p "Informe o segundo valor: " VALOR2
+echo ""
+echo "Soma dos dois valores informados é : $( expr $VALOR1 + $VALOR2 )"
